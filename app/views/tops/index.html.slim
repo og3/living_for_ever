@@ -1,8 +1,10 @@
 .all-container
   header.container.pt-2
-    .row.align-items-center.h-100
-      = link_to "ABOUT", "#", class: 'col-6 btn btn-default text-center'
-      = link_to "NEWS", "#", class: 'col-6 btn btn-default text-center'
+    .row
+      .col-6.text-center.d-grid.gap-2.header-btn-size
+        button.btn.btn-outline-secondary.btn-block ABOUT
+      .col-6.text-center.d-grid.gap-2.header-btn-size
+        button.btn.btn-outline-secondary.btn-block NEWS
   .container
     img-area
       article#index.container.next-open
@@ -10,7 +12,7 @@
           h1 HI HOW ARE YOU
   .container.bg-worning
     h2.text-center#item
-    h2.text-center since_site_established
+    h2.text-center since site established
   footer.container.bg-success
     nav
       ul
