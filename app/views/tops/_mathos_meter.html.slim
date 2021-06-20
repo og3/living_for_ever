@@ -1,0 +1,12 @@
+footer.container.pt-3
+  .row.align-items-center
+    .col-3
+    .col-6.d-grid.gap-2
+      = link_to "MATHOS!!", post_mathos_path, remote: true, class: "btn btn-outline-danger btn-lg"
+    .col-3
+  .row.pt-3
+    h1.text-center スーパーマソスメーターオンライン
+  .row.pt-3
+    h1.text-center
+      .total_mathos
+        = "#{@mathos.total_mathos.value} マソス"

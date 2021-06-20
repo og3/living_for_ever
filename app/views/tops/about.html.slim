@@ -1,0 +1,18 @@
+.all-container
+  header.container.pt-2.pb-3
+    .row
+      .col-6.text-center.d-grid.gap-2
+        button.btn.btn-block.btn-lg style="transform: rotate(0);"
+          = link_to "TOP", root_path, class: "text-decoration-none text-secondary stretched-link"
+      .col-6.text-center.d-grid.gap-2.header-btn-size
+        button.btn.btn-block.btn-lg style="transform: rotate(0);"
+          = link_to "NEWS", news_path, class: "text-decoration-none text-secondary stretched-link"
+  .container.pt-5.pb-3
+    article.fs-3.text-center
+      p This is a site that has no particular meaning.
+      p The top image is Daniel Johnston's CD jacket.
+      p If you like it, please buy it.
+      p The mathos meter is a pakuri of the Omokoro.
+      p Omokoro is an interesting site, so please go if you like.
+  = render partial: "since_site_established"
+  = render partial: "mathos_meter"

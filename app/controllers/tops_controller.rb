@@ -3,6 +3,12 @@ class TopsController < ApplicationController
   def index
   end
 
+  def about
+  end
+
+  def news
+  end
+
   def post_mathos
     @mathos.total_mathos.increment
   end
