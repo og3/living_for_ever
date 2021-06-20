@@ -7,8 +7,8 @@ require('jquery')
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import "channels"
+require('bootstrap');
 
 Rails.start()
 Turbolinks.start()
-//=require bootstrap
 require('time_counter.js.erb')

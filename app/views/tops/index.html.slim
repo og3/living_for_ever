@@ -1,27 +1,16 @@
 .all-container
   header.container.pt-2.pb-3
     .row
+      .col-6.text-center.d-grid.gap-2
+        button.btn.btn-block.btn-lg style="transform: rotate(0);"
+          = link_to "ABOUT", about_path, class: "text-decoration-none text-secondary stretched-link"
       .col-6.text-center.d-grid.gap-2.header-btn-size
-        button.btn.btn-block.btn-lg ABOUT
-      .col-6.text-center.d-grid.gap-2.header-btn-size
-        button.btn.btn-block.btn-lg NEWS
+        button.btn.btn-block.btn-lg style="transform: rotate(0);"
+          = link_to "NEWS", news_path, class: "text-decoration-none text-secondary stretched-link"
   .container.pt-5.pb-3
     img-area
       article#index.container.next-open
         section#mv
           h1 HI HOW ARE YOU
-  .container.bg-worning.pt-2.pb-3
-    h2.text-center#item
-    h2.text-center since site established
-  footer.container.pt-3
-    .row.align-items-center
-      .col-3
-      .col-6.d-grid.gap-2
-        = link_to "MATHOS!!", post_mathos_path, remote: true, class: "btn btn-outline-danger btn-lg"
-      .col-3
-    .row.pt-3
-      h1.text-center スーパーマソスメーターオンライン
-    .row.pt-3
-      h1.text-center
-        .total_mathos
-          = "#{@mathos.total_mathos.value} マソス"
+  = render partial: "since_site_established"
+  = render partial: "mathos_meter"
