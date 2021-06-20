@@ -1,0 +1,23 @@
+window.onload = function(){
+
+  function Time_exchange() {
+        now_time = new Date();
+        sec_present = (now_time.getTime()/1000).toFixed(0);
+        sec_start = (Date.parse("2021-06-18T08:10:00")/1000).toFixed(0);
+        sec_time = sec_present - sec_start;
+
+        sec = sec_time % 60;
+        time = (sec_time - sec)/60;
+        min = time % 60;
+        time = (time - min)/60;
+        hour = time % 24;
+        time = (time - hour)/24;
+        days = time;
+    document.getElementById("item").innerHTML =  days + "d " + hour + "h " + min + "m " + sec + "s" ;
+  };
+
+  function timer(){
+    setInterval(Time_exchange, 1000);
+  }
+  timer();
+}
