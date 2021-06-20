@@ -10,3 +10,4 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 //=require bootstrap
+require ('time_counter.js.erb')
